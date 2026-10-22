@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 60,
+      "includeFiles": "{automation,Open Item Reports,Set of rules for automation}/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index?__vpath=/$1" }
+  ]
+}
